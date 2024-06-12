@@ -2,7 +2,8 @@
 (async ()=> {
 	const app = new PIXI.Application();
 	await app.init({ width: 640, height: 360 });
-	document.body.appendChild(app.canvas);
+	const pixiDiv = document.getElementById("pixi");
+	pixiDiv.appendChild(app.canvas);
 	
 	// load the PNG asynchronously
 	await PIXI.Assets.load('sample.png');

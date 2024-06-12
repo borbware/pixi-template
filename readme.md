@@ -1,3 +1,3 @@
 ## Running
 
-	npx http-server
+	npm run dev
